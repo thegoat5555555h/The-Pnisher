@@ -1,77 +1,41 @@
-# 🛠️ The Punisher - Batch Utility Script by ! paulos
+# Tools Menu
 
-## 📌 Overview
+## Description
+This project provides a simple tools menu for various network-related tasks, including IP logging, port scanning, network pinging, and DNS lookups. The tools can be used for educational purposes to understand network security and related concepts.
 
-**The Punisher** is a batch-based interactive command-line utility that provides several tools and functions — some of which are for security research or administrative purposes. This script features a dynamic ASCII UI, colored interface, and navigable menu with multiple tools.
+## Disclaimer
+**IMPORTANT: This project is intended for educational purposes only.**
 
----
+### Legal and Ethical Considerations
+- **Usage**: The tools provided in this project should only be used on systems and networks that you own or have explicit permission to test. Unauthorized use of these tools on systems you do not own or have permission to test is illegal and unethical.
+- **Responsibility**: The authors of this project are not responsible for any misuse of the tools provided. Users are solely responsible for their actions and must ensure they comply with all applicable laws and regulations.
+- **Intent**: The primary intent of this project is to educate users about network security and ethical hacking practices. It is not intended to be used for malicious activities.
 
-## ⚙️ Features & Menu Options
+## Tools Included
+1. **IP Logger**: Logs the IP address of a user accessing a specific URL and sends the information to a specified webhook.
+2. **Port Scanner**: Scans a range of ports on a specified target IP address to determine their open/closed status.
+3. **Network Pinger**: Pings a specified IP address or domain a given number of times to check network connectivity.
+4. **DNS Lookup**: Performs a DNS lookup for a specified domain to retrieve DNS records.
 
-### 1. **WinRAR Cracker**
-- **inspired by** https://github.com/EbolaMan-YT/WinRAR-Cracker
-- **Description:** Executes `WinRAR.bat`, a script designed to attempt cracking or bypassing WinRAR archive passwords. 
-  🛠️ The Punisher - Batch Utility Script by ! paulos, a powerful batch-based toolkit featuring various utilities, including a similar WinRAR cracking function.
-- **Location:** `code/WinRAR.bat`
+## Usage
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/yourusername/tools-menu.git
+   cd tools-menu
+   ```
 
-### 2. **IP Tools**
-- **Submenu includes:**
-  - **My IP:** Displays the user's local IP address using the `ping` command.
-  - **Target:** Placeholder for IP lookup or tracking (marked as "Under Development").
-- **Uses:** Useful for IP retrieval and future integration of IP intelligence.
+2. Run the tools menu script:
+   ```sh
+   login_menu.bat
+   ```
 
-### 3. **Webhook Spammer**
-- **Description:** Executes `WebhookSpammer.bat` to spam Discord (or other) webhooks.
-- **Location:** `code/WebhookSpammer.bat`
+3. Follow the prompts to use the various tools.
 
-### 4. **Dark Web Links**
-- **Description:** Executes `darkweb.bat`, likely containing curated links or tools related to onion services.
-- **Location:** `code/darkweb.bat`
+## Contribution
+Contributions to this project are welcome. If you have suggestions for improvements or additional tools, please open an issue or submit a pull request.
 
-### 5. **DOX Generator**
-- **Description:** Prompts the user to input personal and technical data (Discord info, PC specs, phone data, personal identity).
-- **Purpose:** Generates a comprehensive information file `info.txt`, structured with sections like DISCORD, PC, PHONE, PERSONAL, GEO, and LOGS.
-- **Warning:** This could be used for unethical data collection. Use responsibly.
+## License
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
 
----
-
-## 💡 How It Works
-
-### General Flow
-- Starts in the `code` directory.
-- Displays an animated ASCII title screen.
-- Presents a menu and waits for input.
-- Each option calls a specific labeled section using `goto`.
-- Text and info are styled using ANSI color codes (via `echo` statements).
-
-### `DOX` Workflow
-- Asks the user a long series of questions.
-- Uses conditional logic to ask for system info if the user answers `yes`.
-- Writes all input into a structured `info.txt` file with section headers and values.
-
----
-
-## 🔐 Ethical Disclaimer
-
-> ⚠️ **This script contains features that can be used for unethical, illegal, or malicious purposes.** These include:
-> - Cracking software (WinRAR)
-> - Gathering and storing sensitive user/system data
-> - Discord token collection
-> - Webhook spamming
-> 
-> **Use this tool responsibly, for educational or white-hat purposes only.**
-
----
-
-## 🗂️ Files Required
-- `WinRAR.bat` — WinRAR cracking logic  
-- `WebhookSpammer.bat` — Webhook spammer script  
-- `darkweb.bat` — List of dark web links or search tool  
-
-Place all supporting files in the `code/` directory.
-
-## 📦 Output
-- `info.txt` — Stores the generated report from the DOX form.
-
-## 🧾 License
-This script is provided **as-is** for educational use only. The author is not responsible for misuse.
+## Contact
+For any questions or concerns, please contact the project maintainer at [your.email@example.com](mailto:your.email@example.com).
